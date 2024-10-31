@@ -1,0 +1,145 @@
+figure, body {
+  margin: 0;  
+}
+
+.body__copy {
+  width: 700px;
+  margin: 10px auto;
+  padding: 20px 0;
+}
+
+.n-scrollytelling {
+    position: relative;
+    z-index: 500;
+}
+
+.n-scrollytelling__viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.n-scrollytelling__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(70%);
+}
+
+.n-scrollytelling__text:first-of-type {
+    margin-top: -33vh;
+}
+
+.n-scrollytelling__text:last-of-type {
+    padding-bottom: 66vh;
+    margin-bottom: 0;
+}
+
+.n-scrollytelling__text {
+    position: relative;
+    margin-bottom: 100vh;
+    max-width: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    font-family: FinancierDisplayWeb, serif;
+    color: #fff;
+    font-size: 33px;
+    line-height: 43px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+}
+
+
+.n-scrollytelling--fade figure {
+  opacity: 0;
+}
+
+.n-scrollytelling--fade figure:first-of-type {
+  opacity: 1;
+}
+
+.n-scrollytelling--fade figure {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+
+#phone {
+  background-color: white;
+  width: 1000px;
+  height: 600px;
+  left: 50px;
+  top: 50px;
+  overflow: hidden;
+  display: flex;
+  margin:auto;
+}
+
+.cardcontainer {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 80%;
+  left: 15px;
+  top: 10%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 75%;
+  background-color: grey;
+  background-position: center right;
+  background-size: cover;
+  transition: background-position 2s;
+}
+
+.focus .image {
+  background-position: center;
+  transition: background-position 2s;
+}
+
+.text {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 25%;
+  font-size: 2em;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+body {
+  margin: 0; /* 移除默认的边距 */
+}
+.full-width-image {
+  width: 100%; /* 设置图片宽度为100% */
+  height: auto; /* 保持图片比例 */
+}
