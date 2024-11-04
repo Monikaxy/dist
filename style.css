@@ -15,6 +15,7 @@ figure, body {
     z-index: 500;
 }
 
+
 .n-scrollytelling__viewport {
     width: 100vw;
     height: 100vh;
@@ -42,6 +43,22 @@ figure, body {
     margin-bottom: 0;
 }
 
+.n-scrollytelling__text[data-scrollytelling-assosicated-slide="1"] {
+  font-size: 50px;
+  line-height: 76px;
+  max-width: 1200px;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.n-scrollytelling__text[data-scrollytelling-assosicated-slide="1"] .large-text {
+  font-size: 70px; 
+  font-weight:1000;
+}
+
+.n-scrollytelling__text[data-scrollytelling-assosicated-slide="1"] .small-text {
+  font-size: 33px; 
+}
 .n-scrollytelling__text {
     position: relative;
     margin-bottom: 100vh;
@@ -54,7 +71,7 @@ figure, body {
     font-family: FinancierDisplayWeb, serif;
     color: #fff;
     font-size: 33px;
-    line-height: 43px;
+    line-height: 40px;
     font-weight: 700;
     text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
 }
@@ -140,8 +157,38 @@ figure, body {
 
 body {
   margin: 0; /* 移除默认的边距 */
+  
 }
 .full-width-image {
   width: 100%; /* 设置图片宽度为100% */
   height: auto; /* 保持图片比例 */
+}
+
+.Boston {
+  width: 70%; /* 设置宽度为网页的70% */
+  margin: 0 auto; /* 将图表居中 */
+}
+
+.Chicago{
+  width: 70%; /* 设置宽度为网页的70% */
+  margin: 0 auto; /* 将图表居中 */
+}
+
+.card-title{
+  font-size: 33px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 20px 0;
+}
+
+.body__copy:first-of-type::first-letter {
+  font-size: 100px; /* 调整放大倍数 */
+  font-weight: bold;
+  float: left;
+  margin-right: 5px; /* 首字母与文本的间距 */
+  line-height: 1; /* 控制首字母的行高 */
+  color: #333; /* 设置颜色，可根据需要调整 */
+  font-family: serif; /* 使用新闻风格字体 */
 }
